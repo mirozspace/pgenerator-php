@@ -1,0 +1,23 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.selector-for-some-widget {
+    box-sizing: content-box;
+  }
+
+  .footer{
+    padding: 0.5rem;
+    text-align: center;
+    background-color: rgb(248,249,250);
+  }
+
+  .checks{
+    display: flex;
+    align-items: center;
+  }
+
+  .form-check{
+    margin: 1rem;
+  }
