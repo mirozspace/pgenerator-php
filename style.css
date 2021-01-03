@@ -38,14 +38,19 @@
       background-color: #0D6DFD;
   }
   
-/*  .fcc{
+.content{
       display: flex;
       flex-direction: column;
       align-items: center;
-  }*/
+      height: 100vh;
+  }*
   
-  .container-fluid > div {
+  .content > div {
       align-self: stretch;
+  }
+  
+  body > div > div:nth-child(4){
+      flex-grow: 1;
   }
   
   .container{

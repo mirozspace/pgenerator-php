@@ -59,7 +59,7 @@ $finalPassword = getRandomPassword
 
     <body class="m0 p0">
 
-        <div class="container-fluid">
+        <div class="container-fluid content">
             <div class="row">
                 <div class="col-lg-12">
                     <nav class="navbar navbar-expand-lg navbar-light bg-light">
