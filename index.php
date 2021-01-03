@@ -1,11 +1,11 @@
 <?php
 require('./passFunctions.php');
 
+$passwordLength = 15;
+
 
 if (isset($_POST['passwordLength'])) {
     $passwordLength = $_POST['passwordLength'];
-} else {
-    $passwordLength = "15";
 }
 
 if (isset($_POST['lowercase'])) {
@@ -97,7 +97,8 @@ $finalPassword = getRandomPassword
                                         value="checked" 
                                         id="lowercase" 
                                         name="lowercase"
-                                        checked>
+                                        <?php echo (isset($_POST['lowercase'])?'checked="checked"':'') ?>
+                                        >
                                     <label class="form-check-label" for="">
                                         a-z symbols
                                     </label>
@@ -109,7 +110,8 @@ $finalPassword = getRandomPassword
                                         value="checked" 
                                         id="uppercase"
                                         name="uppercase"
-                                        checked>
+                                        <?php echo (isset($_POST['uppercase'])?'checked="checked"':'') ?>
+                                        >
                                     <label class="form-check-label" for="">
                                         A-Z symbols
                                     </label>
@@ -121,7 +123,8 @@ $finalPassword = getRandomPassword
                                         value="checked" 
                                         id="digits"
                                         name="digits"
-                                        checked>
+                                        <?php echo (isset($_POST['digits'])?'checked="checked"':'') ?>
+                                        >
                                     <label class="form-check-label" for="">
                                         0-9 symbols
                                     </label>
@@ -133,7 +136,8 @@ $finalPassword = getRandomPassword
                                         value="checked" 
                                         id="specialSymbols"
                                         name="specialSymbols"
-                                        checked>
+                                        <?php echo (isset($_POST['specialSymbols'])?'checked="checked"':'') ?>
+                                        >
                                     <label class="form-check-label" for="">
                                         -.^&*_!@%+> symbols
                                     </label>
@@ -146,7 +150,7 @@ $finalPassword = getRandomPassword
                                         id="" class="form-control" 
                                         placeholder="" 
                                         aria-describedby="helpId" 
-                                        value="15"
+                                        value="<?php echo $passwordLength ?>"
                                         min="15"
                                         max="150">
                                     <small id="helpId" class="text-muted">Password lengtn can be beetween 15 and 150 symbols.</small>
