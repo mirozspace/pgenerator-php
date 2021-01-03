@@ -3,7 +3,7 @@
 function createPasswordWithoutLength($passwordLength, $lowercase, $uppercase,
         $digits, $specialSymbols, $lowercaseData, $uppercaseData,
         $digitsData, $specialSymbolsData) {
-
+    
     $resultPasswordOne = [];
 
     if ($passwordLength == null || ( $lowercase == null && $uppercase == null && $digits == null && $specialSymbols == null)) {

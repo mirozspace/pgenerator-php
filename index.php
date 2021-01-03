@@ -14,8 +14,8 @@ if (isset($_POST['lowercase'])) {
     $lowercase = null;
 }
 
-if (isset($_POST['$uppercase'])) {
-    $uppercase = $_POST['$uppercase'];
+if (isset($_POST['uppercase'])) {
+    $uppercase = $_POST['uppercase'];
 } else {
     $uppercase = null;
 }
@@ -40,6 +40,8 @@ $digitsData = str_split("0123456789");
 $newPassOne = createPasswordWithoutLength($passwordLength, $lowercase,
         $uppercase, $digits, $specialSymbols, $lowercaseData, $uppercaseData,
         $digitsData, $specialSymbolsData);
+
+
 
 $finalPassword = getRandomPassword
         ($newPassOne, $passwordLength, $lowercase,
@@ -96,7 +98,7 @@ $finalPassword = getRandomPassword
                                         id="lowercase" 
                                         name="lowercase"
                                         checked>
-                                    <label class="form-check-label" for="flexCheckDefault">
+                                    <label class="form-check-label" for="">
                                         a-z symbols
                                     </label>
                                 </div>
@@ -108,7 +110,7 @@ $finalPassword = getRandomPassword
                                         id="uppercase"
                                         name="uppercase"
                                         checked>
-                                    <label class="form-check-label" for="flexCheckDefault">
+                                    <label class="form-check-label" for="">
                                         A-Z symbols
                                     </label>
                                 </div>
@@ -120,7 +122,7 @@ $finalPassword = getRandomPassword
                                         id="digits"
                                         name="digits"
                                         checked>
-                                    <label class="form-check-label" for="flexCheckDefault">
+                                    <label class="form-check-label" for="">
                                         0-9 symbols
                                     </label>
                                 </div>
@@ -132,7 +134,7 @@ $finalPassword = getRandomPassword
                                         id="specialSymbols"
                                         name="specialSymbols"
                                         checked>
-                                    <label class="form-check-label" for="flexCheckDefault">
+                                    <label class="form-check-label" for="">
                                         -.^&*_!@%+> symbols
                                     </label>
                                 </div>
