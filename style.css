@@ -21,3 +21,39 @@
   .form-check{
     margin: 1rem;
   }
+  
+  .password{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  .newPassword{
+      font-size: 1.5rem;
+      min-height: 2rem;
+      min-width: 15rem; 
+      border-radius: 0.5rem;
+      padding: 0.5rem;
+      color: #ffffff;
+      background-color: #0D6DFD;
+  }
+  
+/*  .fcc{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }*/
+  
+  .container-fluid > div {
+      align-self: stretch;
+  }
+  
+  .container{
+      text-align: center;
+  }
+  
+  .form{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }

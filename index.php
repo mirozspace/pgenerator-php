@@ -86,7 +86,7 @@ $finalPassword = getRandomPassword
                 <div class="col-lg-12">
                     <div class="container">
 
-                        <form action="" method="post" class="mt-5">
+                        <form action="" method="post" class="mt-5 form">
                             <div class="checks">
                                 <div class="form-check">
                                     <input 
@@ -161,14 +161,21 @@ $finalPassword = getRandomPassword
             <div class="row">
                 <div class="col-lg-12">
                     <div class="container mt-6">
-                        <h4>Your password is: <span><?php echo $finalPassword; ?></span></h4>
+                        
+                        <div class="password">
+                            <h5>Your new password</h5>
+                            <div class="newPassword">
+                                <span><?php echo $finalPassword; ?></span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-12">
                     <footer class="footer mt-5">
-                        <p>mirozspace</p>
+                        <p>© <?php echo date('Y') ?> mirozspace</p>
+                        <p><a href="https://github.com/mirozspace/pgenerator-php.git" target="_blank">GitHub</a></p>
                         <p>This site uses cookies necessary for its operation.</p>
                     </footer>
                 </div>
