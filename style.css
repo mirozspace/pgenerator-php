@@ -16,6 +16,8 @@
   .checks{
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .form-check{
@@ -55,6 +57,7 @@
   
   .container{
       text-align: center;
+      flex-wrap: wrap
   }
   
   .form{
@@ -62,3 +65,7 @@
       flex-direction: column;
       align-items: center;
   }
+  
+/*  body > div > div:nth-child(2) > div > div > form > div > div.form-group > input{
+      width: 5rem;
+  }*/
